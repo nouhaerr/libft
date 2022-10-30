@@ -6,7 +6,7 @@
 #    By: nerrakeb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/14 17:36:35 by nerrakeb          #+#    #+#              #
-#    Updated: 2022/10/28 22:56:27 by nerrakeb         ###   ########.fr        #
+#    Updated: 2022/10/30 18:53:07 by nerrakeb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ CFILES= ft_isalpha.c ft_memcmp.c ft_strdup.c ft_strnstr.c \
 		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 CBONUS= ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 		ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
-		ft_lstclear_bonus.c ft_lstiter_bonus.c
+		ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 OBJ= $(CFILES:.c=.o)
 OBONUS= $(CBONUS:.c=.o)
 NAME= libft.a

@@ -6,7 +6,7 @@
 /*   By: nerrakeb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 21:55:26 by nerrakeb          #+#    #+#             */
-/*   Updated: 2022/10/17 16:01:30 by nerrakeb         ###   ########.fr       */
+/*   Updated: 2022/10/30 22:59:25 by nerrakeb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (fd == -1)
+		return ;
 	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);

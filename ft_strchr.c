@@ -6,7 +6,7 @@
 /*   By: nerrakeb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:05:48 by nerrakeb          #+#    #+#             */
-/*   Updated: 2022/10/23 10:06:54 by nerrakeb         ###   ########.fr       */
+/*   Updated: 2022/10/29 15:37:37 by nerrakeb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (str[i] == (char)c)
 		return ((char *) &s[i]);
-	return (0);
+	return (NULL);
 }
