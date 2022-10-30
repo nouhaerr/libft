@@ -6,13 +6,13 @@
 /*   By: nerrakeb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 21:54:14 by nerrakeb          #+#    #+#             */
-/*   Updated: 2022/10/21 22:13:29 by nerrakeb         ###   ########.fr       */
+/*   Updated: 2022/10/30 12:53:38 by nerrakeb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	long_nbr(unsigned long nbr, int signe)
+static int	long_nbr(unsigned long long nbr, int signe)
 {
 	if (signe > 0 && nbr >= 9223372036854775807)
 		return (-1);
@@ -23,9 +23,9 @@ static int	long_nbr(unsigned long nbr, int signe)
 
 int	ft_atoi(const char *str)
 {
-	unsigned long	nbr;
-	int				signe;
-	int				i;
+	unsigned long long	nbr;
+	int					signe;
+	int					i;
 
 	i = 0;
 	nbr = 0;
