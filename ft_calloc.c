@@ -6,7 +6,7 @@
 /*   By: nerrakeb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 23:08:48 by nerrakeb          #+#    #+#             */
-/*   Updated: 2022/10/30 23:09:43 by nerrakeb         ###   ########.fr       */
+/*   Updated: 2022/10/30 23:09:12 by nerrakeb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
 
-	if (size != '\0' && count >= (SIZE_MAX / size))
+	if (size && count >= SIZE_MAX / size)
 		return (NULL);
 	p = malloc(count * size);
 	if (!p)

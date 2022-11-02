@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nerrakeb <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: nerrakeb <nerrakeb@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/14 17:36:35 by nerrakeb          #+#    #+#              #
-#    Updated: 2022/10/30 18:53:07 by nerrakeb         ###   ########.fr        #
+#    Updated: 2022/11/01 22:37:12 by nerrakeb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ NAME= libft.a
 
 %.o:%.c
 	$(CC) $(CFLAGS) -c $<
-
+	
 all: $(NAME)
 
 $(NAME): $(OBJ)
@@ -46,3 +46,5 @@ re: fclean all
 
 bonus: $(NAME) $(OBONUS)
 	ar -rc $(NAME) $(OBONUS)
+
+.PHONY: all clean fclean re
